@@ -1,0 +1,115 @@
+#sign-up-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sign-up-page-title {
+    font-size: 3rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.sign_up_btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.sign_up_btn img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.or_option {
+    margin: 2.5rem 0;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 730;
+    position: relative;
+}
+
+/* .or_option::before {
+    content: "";
+    background-color: #000;
+    width: 25%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.or_option::after {
+    content: "";
+    background-color: #000;
+    width: 25%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+} */
+
+.form_inputs {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: none;
+    font-weight: 800;
+}
+
+.checkbox-container {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    align-items: center;
+    text-align: start;
+}
+
+.checkbox {
+   height: 2rem;
+   width: 2rem;
+   margin-right: 1rem;
+}
+
+.checkbox-label {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.sign_up_btn_create-account {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background: #000;
+    border-radius: 50px;
+    border: 0;
+    padding: 1.5rem;
+    width: 50%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: block;
+    margin: 4rem auto 1rem auto;
+}
+
+.sign-up-image {
+    position: absolute;
+    left: 0;
+}

@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sign-up.css">
     <title>Messages App</title>
 </head>
 
 <body>
 
     <!-- ---------------------Home-page--------------------- -->
-    <div id="home-page">
+    <div id="home-page" class="page">
+        <div class="psuedo-el"></div>
         <header class="header">
             <h1 class="header_title">Welcome To <br> Shh!</h1>
             <p class="header_par">A Hub Where Whispers Echo Loudest</p>
         </header>
 
         <div class="sign-up-home-page">
-            <button class="sign_up_home-btn">Sign up</button>
+            <button class="sign_up_home-btn" onclick="clickButton()">Sign up</button>
             <span class="have_account"> Already have an account? <a href="#" id="login_btn">Login</a> </span>
         </div>
 
@@ -31,26 +33,34 @@
 
 
     <!-- ---------------------Sign-Up-page--------------------- -->
-    <div id="sign-up-page">
+    <div id="sign-up-page" class="page">
+        <div class="psuedo-el"></div>
         <header>
-            <h3 class="header_title">Sign up to Shh!</h3>
-            <button class="sign_up_btn">Sign up with Google</button>
+            <h3 class="header_title sign-up-page-title">Sign up to Shh!</h3>
+            <button class="sign_up_btn sign_up_home-btn">
+                <img src="./assets/google.png" alt="">
+                Sign up with Google</button>
         </header>
 
-        <span>Or continue with Email</span>
+        <p class="or_option">Or continue with Email</p>
 
         <form>
 
             <div class="form_inputs">
-                <input type="text" placeholder="Enter your name">
-                <input type="text" placeholder="Enter username">
-                <input type="text" placeholder="Enter Email">
-                <input type="text" placeholder="Enter password">
-                <span><input type="checkbox"> I agree with the Terms of Service and Privacy policy </span>
+                <input class="input" type="text" placeholder="Enter your name">
+                <input class="input" type="text" placeholder="Enter username">
+                <input class="input" type="text" placeholder="Enter Email">
+                <input class="input" type="text" placeholder="Enter password">
+                <div class="checkbox-container">
+                    <input class="checkbox" type="checkbox">
+                    <label class="checkbox-label">
+                    I agree with the Terms of Service and Privacy policy
+                    </label>
+                </div>
             </div>
 
             <div class="sign-up-page-logins">
-                <button class="sign_up_btn">Sign up with Google</button>
+                <button class="sign_up_btn_create-account">Create Account</button>
                 <span class="have_account">
                     Already have an account?
                     <a href="#" id="login_btn">Login</a>
@@ -59,7 +69,7 @@
 
         </form>
 
-        <div class="footer-image">
+        <div class="footer-image sign-up-image">
             <img src="./assets/whoa 1.png" alt="">
         </div>
     </div>
