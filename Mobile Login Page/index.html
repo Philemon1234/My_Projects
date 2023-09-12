@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sign-up.css">
+    <link rel="stylesheet" href="./css/login-page.css">
     <title>Messages App</title>
 </head>
 
@@ -22,8 +23,8 @@
         </header>
 
         <div class="sign-up-home-page">
-            <button class="sign_up_home-btn" onclick="clickButton()">Sign up</button>
-            <span class="have_account"> Already have an account? <a href="#" id="login_btn">Login</a> </span>
+            <button class="sign_up_home-btn" onclick="showSignupPage()">Sign up</button>
+            <span class="have_account"> Already have an account? <a href="#" id="login_btn" onclick="showLoginPage()">Login</a> </span>
         </div>
 
         <div class="footer-image">
@@ -63,7 +64,7 @@
                 <button class="sign_up_btn_create-account">Create Account</button>
                 <span class="have_account">
                     Already have an account?
-                    <a href="#" id="login_btn">Login</a>
+                    <a href="#" id="login_btn" onclick="showLoginPage()">Login</a>
                 </span>
             </div>
 
@@ -75,28 +76,32 @@
     </div>
 
     <!-- ---------------------Login-page--------------------- -->
-    <div id="login-page">
+    <div id="login-page" class="page">
+        <div class="psuedo-el"></div>
         <header>
-            <h3 class="header_title">Login in to Shh!</h3>
-            <button class="sign_up_btn">Log in with Google</button>
+            <h3 class="header_title sign-up-page-title login_title">Login in to Shh!</h3>
+            <button class="sign_up_btn sign_up_home-btn">
+                <img src="./assets/google.png" alt="">
+                Log in with Google</button>
         </header>
 
-        <span>Or log in with Email</span>
+        <p class="or_option login_or_option">Or log in with Email</p>
 
         <form>
 
             <div class="form_inputs">
-                <label>Username or Email</label>
-                <input type="text">
-                <label>Password</label>
+                <label class="form_inputs_label">Username or Email</label>
+                <input class="input" type="text">
+                <label class="form_inputs_label">Password</label>
                 <span class="forgot-password"><a href="#">Forgot?</a></span>
-                <input type="password">
+                <input class="input" type="password">
             </div>
 
             <div class="sign-up-page-logins">
+                <button class="sign_up_btn_create-account">Login</button>
                 <span class="have_account">
-                    Already have an account?
-                    <a href="#" id="login_btn">Login</a>
+                    Don't have an account?
+                    <a href="#" id="login_btn" onclick="showSignupPage()">Sign up</a>
                 </span>
             </div>
 

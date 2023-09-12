@@ -177,9 +177,9 @@ body {
 }
 
 @media screen and (min-width: 390px) {
-    .footer-image img {
-        /* display: none; */
-    }
+    /* .footer-image img {
+        display: block;
+    } */
 
     .page::before {
         display: none;
@@ -199,11 +199,11 @@ body {
 }
 
 #home-page {
-    display: none;
+    display: block;
 }
 
 #sign-up-page {
-    display: block;
+    display: none;
 }
 
 #login-page {
