@@ -18,15 +18,17 @@
     <!-- -------------- Header ---------------- -->
     <header class="about_header">
         <!-- ------------  Nav Bar  -------------- -->
+        <!-- ------------  Nav Bar  -------------- -->
         <nav class="nav_bar flex justify-space-between align-center">
             <div class="navBar_logo">
-                <a href="#"> <img src="./assets/Home-images/yufat-logo.png" alt="YUFAT LOGO"></a>
+                <a href="index.html"> <img src="./assets/Home-images/yufat-logo.png" alt="YUFAT LOGO"></a>
             </div>
 
             <div class="right_nav_menu flex align-center">
                 <ul class="nav_links">
+                <span class="nav_open_close_btns" id="close">x</span>
                     <li><a class="nav_link" href="index.html">HOME</a></li>
-                    <li class="drop_down_link nav_link"><a class="nav_link" href="">ABOUT <i
+                    <li class="drop_down_link nav_link"><a class="nav_link" href="about.html">ABOUT <i
                                 class="fa fa-angle-down about-arrow"></i></a>
                         <div class="drop_down_menu">
                             <ul>
@@ -36,17 +38,17 @@
                         </div>
                     </li>
                     <li class="nav_link"><a class="nav_link" href="services.html">SERVICES</a></li>
-                    <li class="nav_link"><a class="nav_link" href="team">TEAM</a></li>
+                    <!-- <li class="nav_link"><a class="nav_link" href="team.html">TEAM</a></li> -->
                     <li class="nav_link"><a class="nav_link" href="gallery.html">GALLERY</a></li>
                     <li class="nav_link"><a class="nav_link" href="contact.html">CONTACT</a></li>
                 </ul>
 
                 <div class="modes">
-                    <span><i class="fa fa-moon"></i></span>
-                    <!-- <span><i class="fa fa-sun"></i></span> -->
+                    <img src="./assets/Home-images/moon.png" id="theme-toggle-icon" alt="">
                 </div>
 
-                <button class="btn">DONATE</button>
+                <button class="btn nav_donate_btn">DONATE</button>
+                <span class="nav_open_close_btns" id="open"><i class="fa fa-bars"></i></span>
             </div>
         </nav>
 
@@ -169,6 +171,7 @@
         <h2 class="footer_yufat_name title_psuedo">YOUTH UNITED FOR AFRICAN TRANSFORMATION</h2>
     </footer>
 
+    <script src="js/theme.js"></script>
     <script src="js/script.js"></script>
 </body>
 
