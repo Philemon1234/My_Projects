@@ -2,7 +2,7 @@ let themeIcon = document.getElementById("theme-toggle-icon");
 let body = document.querySelector("body");
 let welcomeTitle = document.querySelector(".welcome_title");
 let navBar = document.querySelector(".nav_bar");
-let navLink = document.querySelectorAll(".nav_link");
+// let navLink = document.querySelectorAll(".nav_link");
 
 // Function to set the theme based on a given preference
 function setTheme(themePreference) {
@@ -12,20 +12,20 @@ function setTheme(themePreference) {
         body.style.backgroundColor = "black";
         navBar.style.backgroundColor = "black";
         welcomeTitle.style.color = "white";
-        for (let i = 0; i < navLink.length; i++) {
-            let links = navLink[i];
-            links.style.color = "green";
-        }
+        // for (let i = 0; i < navLink.length; i++) {
+        //     let links = navLink[i];
+        //     // links.style.color = "white";
+        // }
     } else {
         document.body.classList.remove("dark-theme");
         themeIcon.src = "assets/Home-images/moon.png";
         body.style.backgroundColor = "white";
         navBar.style.backgroundColor = "white";
         welcomeTitle.style.color = "black";
-        for (let j = 0; j < navLink.length; j++) {
-            let navlinks = navLink[j];
-            navlinks.style.color = "red";
-        }
+        // for (let i = 0; i < navLink.length; i++) {
+        //     let links = navLink[i];
+        //     // links.style.color = "black";
+        // }
     }
 }
 
