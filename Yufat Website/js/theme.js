@@ -14,7 +14,7 @@ function setTheme(themePreference) {
         welcomeTitle.style.color = "white";
         for (let i = 0; i < navLink.length; i++) {
             let links = navLink[i];
-            links.style.color = "white";
+            links.style.color = "green";
         }
     } else {
         document.body.classList.remove("dark-theme");
@@ -22,9 +22,9 @@ function setTheme(themePreference) {
         body.style.backgroundColor = "white";
         navBar.style.backgroundColor = "white";
         welcomeTitle.style.color = "black";
-        for (let i = 0; i < navLink.length; i++) {
-            let links = navLink[i];
-            links.style.color = "black";
+        for (let j = 0; j < navLink.length; j++) {
+            let navlinks = navLink[j];
+            navlinks.style.color = "red";
         }
     }
 }
