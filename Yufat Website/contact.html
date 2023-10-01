@@ -64,13 +64,17 @@
         <section class="contact_section">
             <div class="contact_container">
                 <div class="form_container">
-                    <form>
+                    <form action="https://formsubmit.co/ntivuguruzwaphilemon0@gmail.com" method="POST">
                         <div class="form_inputs">
-                            <input class="form_el" type="text" placeholder="Enter your Name">
-                            <input class="form_el" type="text" placeholder="Enter your Email">
-                            <textarea class="form_el" id="textarea" cols="30" rows="10"
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="Thank you page url">
+                            <input type="hidden" name="_subject" value="New Email Message!">
+
+                            <input class="form_el" name="Name" type="text" placeholder="Enter your Name">
+                            <input class="form_el" name="Mail" type="text" placeholder="Enter your Email">
+                            <textarea class="form_el" name="Message" id="textarea" cols="30" rows="10"
                                 placeholder="Enter your message..."></textarea>
-                            <button class="form_btn">SUBMIT</button>
+                            <button type="submit" class="form_btn">SUBMIT</button>
                         </div>
                     </form>
 

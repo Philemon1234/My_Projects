@@ -102,6 +102,17 @@ a {
     padding-bottom: 5rem;
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: 1s all;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
 /* Flex */
 .flex {
     display: flex;
@@ -971,16 +982,13 @@ footer {
     width: 100%;
     padding: 1rem;
     font-size: 1.4rem;
-    color: var(--color-black);
+    color: var(--color-gray);
     margin-bottom: 2rem;
     border-radius: .5rem;
     outline: none;
     border: none;
-    background-color: var(--color-blue);
-}
-
-.form_inputs .form_el:focus {
-    border: .1rem solid var(--secondary-color);
+    background-color: rgb(115, 211, 255, .2);
+    border: .1rem solid #BCEBFF;
 }
 
 .form_btn {
@@ -1492,6 +1500,7 @@ footer {
     .causes_section {
         height: 130vh;
     }
+
     .causes_card {
         height: 50vh;
         overflow-y: scroll;
@@ -1508,3 +1517,9 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
